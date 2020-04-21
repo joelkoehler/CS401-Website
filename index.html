@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Love is in the air!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="bird.jpg" type='image/x-icon'>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 0) {
+            $(".topbar").css({"opacity" : "0"})
+          }
+          else {
+              $(".topbar").css({"opacity" : "1"})
+          }
+        })
+      })
+    </script>
+  </head>
+  <header>
+    <nav class="topbar">
+      <ul>
+        <li><img src="bird.jpg" alt="bird haha" class="logo"></li>
+        <li><a href="index.html" class="home-button"><b>Home</b></a></li>
+        <li><a href="profile-redirect.php" class="account-button">Account</a></li>
+        <li><a href="cart.php" class="order-button">Place Order</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="welcome-wrapper">
+      <div class="empty-row"></div>
+      <div class="welcome-header">
+        <h1>Love is in the air</h1>
+      </div>
+      <img src="pigd.png" alt="bird haha" class="bird-art">
+      <div class="welcome-content">
+        <h2>Send a love letter with our award winning carrier pigeons</h2>
+      </div>
+      <div class="get-started-button">
+        <a href="#scroll-down1">Send a Pigeon</a>
+      </div>
+    </div>
+    <div class="features-wrapper">
+        <div class="empty-row"></div>
+        <div id="scroll-down1" class="features-header">
+          <h3>Two exciting packages</h3>
+        </div>
+        <div class="standard-pack-container" class="fade">
+          <h4 class="pack-head">Standard Package</h4>
+          <p class="pack-info">We will send one of our award winning pigeons to whatever coordinates you provide,
+            fixed with a note to a loved one. Nothing says “I love you” like a heartfelt letter delivered by a messenger with the elegance and majesty of the pigeon.
+          </p>
+          <div class="select-std-button">
+            <a href="cart.php">Order now</a>
+          </div>
+        </div>
+        <div class="expidited-pack-container" class="fade">
+          <h5 class="pack-head">Expedited Package</h5>
+          <p class="pack-info">
+            This package is everything included with the standard package but better; we can get the message delivered in under 5 hours.
+            “How”, you ask? We have one pigeon in our fleet that has a special diet (consisting mostly of various amphetamines). PETA approved*.
+            <br><br>
+            *approval pending
+          </p>
+          <div class="select-exp-button">
+            <a href="cart.php">Order now</a>
+          </div>
+        </div>
+    </div>
+  </body>
+  <footer>
+  </footer>
+</html>

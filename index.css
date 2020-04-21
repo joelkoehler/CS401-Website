@@ -1,0 +1,253 @@
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+  height: 3000px; /* Used to enable scrolling */
+  background: linear-gradient(140deg, #ff99ff 0%, #cc66ff 90%);
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+nav {
+  height: 50px;
+  background-color: white;
+  margin: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  position: fixed;
+
+}
+
+.topbar {
+  transition: .5s;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+ul {
+  white-space:nowrap
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 20px;
+  float: left;
+}
+
+ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  color: #000000;
+  padding: 0 20px;
+}
+
+.welcome-wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: (3, 1fr)
+  height: 500px;
+  grid-column-gap: 10px;
+  /*place-items: center;*/
+}
+
+.empty-row {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  height: 200px;
+}
+
+.empty-row-short {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  height: 100px;
+}
+
+.welcome-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.bird-art {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  margin-right: 20px;
+}
+
+.welcome-content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  font-size: 20px;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.get-started-button {
+  background-color: white;
+  border-radius: 90px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-width: 130px;
+  box-shadow: 5px 5px 10px #404040;
+}
+
+.get-started-button a {
+  text-decoration: none;
+  color: #cc66ff;
+  line-height: 40px;
+}
+
+.select-std-button, .select-exp-button {
+  background-color: #d9d9d9;
+  border-radius: 90px;
+  height: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  min-width: 130px;
+  box-shadow: 5px 5px 10px #404040;
+  grid-row-start: 3;
+}
+
+.pack-head {
+  color: black;
+  font-size: 25px;
+  grid-row-start: 1;
+}
+
+.pack-info {
+  color: black;
+  font-size: 15px;
+  grid-row-start: 2;
+  margin: 30px;
+}
+
+.select-std-button a  {
+  text-decoration: none;
+  color: black;
+  line-height: 40px;
+}
+
+.select-exp-button a {
+  text-decoration: none;
+  color: black;
+  line-height: 40px;
+}
+
+#scroll-down1 {
+  padding-top: 40px;
+}
+
+.features-wrapper {
+  text-align: center;
+  display: grid;
+  grid-template-columns:  minmax(auto, 50px)  minmax(100px, auto)  minmax(auto, 50px)  minmax(100px, auto)  minmax(auto, 50px);
+  grid-template-rows: 200px 1fr 1fr 1fr 1fr;
+  height: 900px;
+  grid-column-gap: 50px;
+  /*place-items: center;*/
+}
+
+.features-header {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  height: 200px;
+  color: white;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+h3 {
+  position: relative;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px
+}
+
+.x {
+  margin: 50px;
+  float: left;
+  width: 35%;
+  height: 300px;
+  background-color: white;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #404040;
+}
+
+.y {
+  margin: 50px;
+  float: right;
+  width: 35%;
+  height: 300px;
+  background-color: white;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #404040;
+}
+
+.standard-pack-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  height: 100%;
+  background-color: white;
+  min-width: 230px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #404040;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+}
+
+.expidited-pack-container {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  height: 100%;
+  background-color: white;
+  min-width: 230px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #404040;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;            /* Footer height */
+}
